@@ -88,7 +88,7 @@ section {
 /* #endregion Demo */
 
 /* #region Planning */
-main section:nth-child(2) {
+main section:nth-child(even) {
     background-color: var(--bg-section);
 }
 /* #endregion Planning */
@@ -113,6 +113,12 @@ main section:nth-child(2) {
 
 /* #endregion Testimonials */
 
+/* #region Benefits */
+.benefits h2 {
+    text-align: center;
+    padding: 1rem 0;
+}
+/* #endregion Benefits */
 /* #endregion Main */
 
 /* #region Footer */
@@ -124,6 +130,10 @@ main section:nth-child(2) {
 @media screen and (min-width:480px) and (max-width:768px) {
     .col_md_8 {
         width: calc(100% / 12 * 8)
+    }
+
+    .col_md_6 {
+        width: calc(100% / 12 * 6)
     }
 
     .col_md_4 {
