@@ -1,0 +1,37 @@
+/* #region Common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* #endregion Common */
+
+/* #region Color */
+:root {
+    --header: #0084fd;
+    --bg-blocks-header: #b5ddff;
+    --bg-section: #9792e4;
+    --footer: #333333;
+}
+/* #endregion Color */
+
+/* #region Header */
+/* #endregion Header */
+
+/* #region Main */
+
+/* #endregion Main */
+
+/* #region Footer */
+/* #endregion Footer */
+
+/* #region Responsive layout */
+
+/* #region tablet */
+/* #endregion tablet */
+
+/* #region Desktop */
+/* #endregion Desktop */
+
+
+/* #endregion Responsive layout */
