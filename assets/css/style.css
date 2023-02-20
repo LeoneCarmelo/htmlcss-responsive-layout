@@ -40,6 +40,7 @@ section {
     height:100px;
 }
 
+
 /* #endregion Debug */
 
 /* #region Color */
@@ -60,7 +61,13 @@ section {
     width: 100%;
 }
 
+.my_1r {
+    margin: 1rem 0;
+}
 
+.fd-column {
+    flex-direction: column;
+}
 /* #endregion Utility */
 
 
@@ -85,6 +92,26 @@ main section:nth-child(2) {
     background-color: var(--bg-section);
 }
 /* #endregion Planning */
+
+/* #region Testimonials */
+.header_testimonials {
+    text-align: center;
+    padding:2rem 0;
+}
+
+.header_testimonials h2 {
+    padding: 1rem 0;
+}
+
+.avatar {
+    background-color: green;
+}
+
+.description {
+    background-color: red;
+}
+
+/* #endregion Testimonials */
 
 /* #endregion Main */
 
@@ -130,15 +157,29 @@ main section:nth-child(2) {
     .fa-bars {
         display: none;
     }
+
     .app_header ul {
         display: flex;
         justify-content: center;
         list-style: none;
         gap: 10px;
     }
+
     .row {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .testimonial [class^=col] {
+        display: flex;
+    }
+
+    .avatar {
+        width:30%;
+    }
+    
+    .description {
+        width: 70%;
     }
 }
 
