@@ -8,6 +8,8 @@
 .container {
     width:80%;
     margin:auto;
+    justify-content: space-between;
+    align-items: center;
 }
 
 body {
@@ -20,19 +22,9 @@ section, footer {
 /* #endregion Common */
 
 /* #region Debug */
-.debug .logo {
-    width:80px;
-    height:40px;
-    background-color: yellow;
-}
-.debug .app_header ul {
-    background-color: yellow;
-}
 
 .debug .container {
     height: 100%;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .debug [class^=col] {
@@ -86,6 +78,28 @@ section, footer {
 
 .app_header ul {
     display:none;
+}
+
+.logo {
+    width:80px;
+}
+
+.app_header ul li {
+    margin: 0 4px;
+    color: white;
+    cursor: pointer;
+}
+
+li > a {
+    text-decoration:none;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 32px;
+}
+
+.fa-bars {
+    color: white;
 }
 /* #endregion Header */
 
@@ -183,17 +197,6 @@ footer {
         width: calc(100% / 12 * 4)
     }
 
-    .fa-bars {
-        display: none;
-    }
-
-    .app_header ul {
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        gap: 10px;
-    }
-
     .row {
         display: flex;
         flex-wrap: wrap;
@@ -209,6 +212,19 @@ footer {
     
     .description {
         width: 70%;
+    }
+}
+/* fix Get Started problem */
+@media screen and (min-width:806px) {
+    .fa-bars {
+        display:none;
+    }
+
+    .app_header ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 10px;
     }
 }
 
