@@ -4,7 +4,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    width:80%;
+    margin:auto;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
 /* #endregion Common */
+
+/* #region Debug */
+.debug .logo {
+    width:80px;
+    height:40px;
+    background-color: yellow;
+}
+.debug .app_header ul {
+    background-color: yellow;
+}
+
+.debug .container {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* #endregion Debug */
 
 /* #region Color */
 :root {
@@ -15,7 +43,24 @@
 }
 /* #endregion Color */
 
+/* #region Utility */
+.d_flex {
+    display: flex;
+}
+
+/* #endregion Utility */
+
+
 /* #region Header */
+.app_header {
+    height:80px;
+    background-color: var(--header);
+    padding:1rem;
+}
+
+.app_header ul {
+    display:none;
+}
 /* #endregion Header */
 
 /* #region Main */
@@ -28,9 +73,26 @@
 /* #region Responsive layout */
 
 /* #region tablet */
+@media screen and (min-width:768px) {
+
 /* #endregion tablet */
 
 /* #region Desktop */
+@media screen and (min-width:1200px) {
+    .container {
+        width:70%;
+    }
+    .fa-bars {
+        display: none;
+    }
+    .app_header ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 10px;
+    }
+}
+}
 /* #endregion Desktop */
 
 
