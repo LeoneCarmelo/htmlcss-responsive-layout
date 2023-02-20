@@ -40,6 +40,12 @@ section {
     height:100px;
 }
 
+.debug .container-sm {
+    margin:auto;
+    height: 100px;
+    background-color: blue;
+}
+
 
 /* #endregion Debug */
 
@@ -119,6 +125,16 @@ main section:nth-child(even) {
     padding: 1rem 0;
 }
 /* #endregion Benefits */
+
+/* #region About Us */
+/* #endregion About Us */
+
+/* #region Free */
+.container-sm {
+    max-width:480px
+}
+/* #endregion Free */
+
 /* #endregion Main */
 
 /* #region Footer */
